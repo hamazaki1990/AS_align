@@ -1,11 +1,11 @@
 #!/bin/bash -f
 
-for db in $(seq 1 4)
+for db in 150
 do
-  for AS in $(seq 1 11)
+  for AS in 140
   do
     echo $db
     echo $AS
-    blastn -db "hg38_D1Z5_${db}" -query "D1Z5_AS${AS}.fa" -outfmt "6" -out "D1Z5_peri${db}_AS${AS}blast.tsv"
-  done
+    blastn -subject "AS_30bps${db}.fa" -query "AS_30bps${AS}.fa"
+  done >"AS_30bps_blast${AS}.txt"
 done

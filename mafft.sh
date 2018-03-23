@@ -1,7 +1,7 @@
 #!/bin/sh
 
-for Start in 0 45 90 135
+for Start in 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150
 do
   echo $Start
-  mafft --auto DX1_1_${Start}_Btype.fa > DX1_1_B_${Start}_align.fasta
+  mafft --auto AS_30bps${Start}.fa > AS_30bps${Start}_align.fasta
 done
