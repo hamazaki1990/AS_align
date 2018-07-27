@@ -15,5 +15,5 @@ outputf = "match_distribution.csv"
 with open(outputf, "w") as outfile:
     writer = csv.writer(outfile)
     for i in range(10000):
-        a = get_matchlength(342, 50)
+        a = get_matchlength(171, 20)
         writer.writerow(a)

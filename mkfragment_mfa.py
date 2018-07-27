@@ -2,7 +2,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 
 
-rec_iter = SeqIO.parse("SF3.fa", "fasta")
+rec_iter = SeqIO.parse("SF1.fa", "fasta")
 
 
 def make_fragment(cdna, fraglength):
@@ -12,7 +12,7 @@ def make_fragment(cdna, fraglength):
             i += 1
 
 
-outputf = "SF3_fragment.fa"
+outputf = "SF1_fragment.fa"
 
 with open(outputf, "w") as outfile:
     while True:

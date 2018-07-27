@@ -4,7 +4,7 @@ import csv
 
 
 frag_iter = SeqIO.parse("SF3_fragment.fa", "fasta")
-inputfile = "human_deadASs_2017.fa"
+inputfile = "chr11_peri1.fa"
 
 outputf = "detect_exactmatch.csv"
 
